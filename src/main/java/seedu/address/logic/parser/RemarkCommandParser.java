@@ -8,6 +8,7 @@ import seedu.address.commons.core.index.Index;
 import seedu.address.commons.exceptions.IllegalValueException;
 import seedu.address.logic.commands.RemarkCommand;
 import seedu.address.logic.parser.exceptions.ParseException;
+import seedu.address.model.person.Remark;
 
 /**
  * The RemarkCommandParser class is responsible for parsing user input into a RemarkCommand.
@@ -38,7 +39,8 @@ public class RemarkCommandParser implements Parser<RemarkCommand> {
             throw new ParseException(String.format(MESSAGE_INVALID_COMMAND_FORMAT, RemarkCommand.MESSAGE_USAGE), ive);
         }
         // Extract the remark from the input using the "r/" prefix
-        String remark = argMultimap.getValue(PREFIX_REMARK).orElse("");
+        String remarkStr = argMultimap.getValue(PREFIX_REMARK).orElse("");
+        Remark remark = new Remark(remarkStr);
         return new RemarkCommand(index, remark);
     }
 }
