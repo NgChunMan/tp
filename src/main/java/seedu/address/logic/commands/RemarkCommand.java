@@ -1,26 +1,26 @@
 package seedu.address.logic.commands;
 
+import seedu.address.logic.commands.exceptions.CommandException;
 import seedu.address.model.Model;
 
-/**
- * The RemarkCommand class represents a command for adding remarks to items in the address book.
- * It inherits from the Command class.
- */
 public class RemarkCommand extends Command {
 
-    /**
-     * The constant representing the command word for the RemarkCommand.
-     */
     public static final String COMMAND_WORD = "remark";
 
-    /**
-     * Executes the RemarkCommand to perform an action related to adding remarks.
-     *
-     * @param model The model on which the command should operate.
-     * @return A CommandResult containing a message indicating that the RemarkCommand has been executed.
-     */
+    public static final String MESSAGE_USAGE = COMMAND_WORD
+            + ": Edits the remark of the person identified "
+            + "by the index number used in the last person listing. "
+            + "Existing remark will be overwritten by the input.\n"
+            + "Parameters: INDEX (must be a positive integer) "
+            + "r/ [REMARK]\n"
+            + "Example: " + COMMAND_WORD + " 1 "
+            + "r/ Likes to eat junk food.";
+
+    public static final String MESSAGE_NOT_IMPLEMENTED_YET =
+            "Remark command not implemented yet";
+
     @Override
-    public CommandResult execute(Model model) {
-        return new CommandResult("Hello from remark");
+    public CommandResult execute(Model model) throws CommandException {
+        throw new CommandException(MESSAGE_NOT_IMPLEMENTED_YET);
     }
 }
