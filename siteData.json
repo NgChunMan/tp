@@ -201,13 +201,12 @@
       "title": "Ching Ming Yuan's Project Portfolio Page",
       "headings": {
         "project-profbook": "Project: ProfBook",
-        "code-contributed": "Code contributed:",
         "features-contribution": "Features Contribution",
         "classes-contribution": "Classes Contribution",
         "project-management": "Project Management:",
-        "documentations": "Documentations:",
         "user-guide-contributions": "User Guide Contributions",
-        "developer-guide-contributions": "Developer Guide Contributions"
+        "developer-guide-contributions": "Developer Guide Contributions",
+        "community": "Community:"
       },
       "headingKeywords": {}
     },
@@ -261,7 +260,6 @@
       "title": "Loo Mei Lin Zann's Project Portfolio Page",
       "headings": {
         "project-profbook": "Project: ProfBook",
-        "code-contributions": "Code Contributions",
         "project-management": "Project Management",
         "documentation": "Documentation",
         "community": "Community:"
